@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+h2, h3{
+    margin-top: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Aula 02</h1>
+    <h2>Lista ordenada</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h2>Lista não ordenada</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2>Citações</h2>
+
+    <h3>&lt;blockquote&gt;</h3>
+    <blockquote cite="https://google.com">
+        Citação aleatória ... (pode estar dentro de uma tag &lt;p&gt;)
+    </blockquote>
+
+    <h3>&lt;cite&gt;</h3>
+    <p>Citação aleatória ... 
+        <a href="https://google.com"> 
+            <cite>texto que ficará como link</cite>
+        </a>
+    </p>
+
+    <h3>&lt;q&gt;</h3>
+    <q cite="https://google.com">Citação aleatória</q>
+    <!-- <q> é mais usado para citações pequenas, que não precisam de 
+        paragrafo ou quebras de linha-->
+    
+    <h2>Abreviações</h2>
+    <p>
+        O <abbr title="Hypertext Markup Langague">HTML</abbr> não é uma lingaguem de programação
+    </p>
+    
+    <h2>Detalhes de Contato</h2>
+    <address> 
+        <p>Luciana Fiorda<br>
+        <strong>Mogi Guaçu, SP</strong></p>
+    </address>
+
+    <h2>Lista de Descrição</h2>
+    <dl>
+        <dt>Nome do Item 1</dt>
+        <dd>Descrição do item 1</dd>
+
+        <dt>Nome do Item 2</dt>
+        <dd>Descrição do item 2</dd>
+        <dd>Descrição nova do item 2</dd>
+    </dl>
+
+    <!--
+        dl = description list
+        dt = description term
+        dd = description
+        obs: fazer um dt e dd para cada item
+    -->
+
+<h2>Representando códigos</h2>
+
+<h3>&lt;code&gt;</h3>
+<code>
+    for(let i = 0; i < 100; i+){
+        console.log(i)
+    }
+</code>
+
+<h3>&lt;pre&gt;</h3>
+<pre>
+    <code>
+        for(let i = 0; i < 100; i+){
+            console.log(i)
+        } 
+    </code>
+</pre>
+
+<h2>Elementos Genéricos</h2>
+<h3>&lt;div&gt;</h3>
+<div>Serve para agrupar conteúdos, <div>gera quebra de linha</div></div>
+
+<h3>&lt;span&gt;</h3>
+<span>Serve para agrupar texto, <span>não gera quebra de linha</span></span>
+
+
+</body>
+</html>
