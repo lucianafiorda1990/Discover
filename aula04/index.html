@@ -4,9 +4,78 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Aula 04</title>
 </head>
 <body>
-  
+  <h1>Aula 04</h1>
+  <h2>Tables</h2>
+<h3>Tabela Simples</h3>
+<table>
+  <caption>Pessoas por Idade</caption>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Luciana</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>Jean</td>
+      <td>33</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total:</td>
+      <td>2 Pessoas</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h3>Tabela Complexa</h3>
+<table>
+  <caption>Produzidos x Vendidos por Loja</caption>
+
+  <colgroup>
+    <col>
+    <col span="2" style="background-color: rebeccapurple;">
+    <col span="2" style="background-color: salmon;">
+  </colgroup>
+
+
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2" scope="colgroup">Loja A</th>
+      <th colspan="2" scope="colgroup">Loja B</th>
+    </tr>
+    <tr>
+      <th scope="col">Produzidos</th>
+      <th scope="col">Vendidos</th>
+      <th scope="col">Produzidos</th>
+      <th scope="col">Vendidos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Vassouras</th>
+      <td>30</td>
+      <td>25</td>
+      <td>15</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th scope="row">Baldes</th>
+      <td>20</td> 
+      <td>18</td>
+      <td>25</td>
+      <td>22</td>
+    </tr>
+  </tbody>
+</table>
 </body>
 </html>
