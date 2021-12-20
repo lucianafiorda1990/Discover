@@ -1,0 +1,49 @@
+span {
+    color: yellow;
+}
+
+span{
+    color: green;
+}
+
+/* No exemplo acima seria considerado a ultima configuração informada, no caso a cor verde */
+
+* {
+    color: gray;
+}
+
+
+.texto-roxo{
+    color: purple;
+}
+
+#teste {
+    color: blue 
+}
+
+/* se colocar assim pega apenas no que esta na div e nao pega no strong
+div {
+    color: greenyellow;
+} */
+
+
+/* se colocar assim pega a config apenas na palavra dentro do strong 
+div strong{
+    color: greenyellow;
+} */
+
+/* forma correta de fazer para pegar a frase completa*/
+div,
+div strong{
+    color: greenyellow;
+}
+
+/*exemplo de estilização usando class e ID */
+span.texto-roxo#teste {
+    color: rgb(230, 191, 19)
+}
+
+.importante{
+    color:rgb(230, 96, 19) !important;
+}
+

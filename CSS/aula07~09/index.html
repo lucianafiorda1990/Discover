@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 à Aula 09</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        span {
+            color: rgb(219, 30, 162);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 07 à Aula 09</h1>
+    <h2>Cascata</h2>
+    <p>O estilo é lido de cima para baixo, levando 3 fatores em consideração:</p>
+    <p>OBS: se caso tiver dois links style.css, irá considerar o último importado.</p>
+
+    <ol>
+        <li> <strong>Origem do estilo: </strong>onde está sendo atribuido o estilo </li>
+        <p> inline &gt; tag style &gt; tag link</p>
+        <li><strong>Especificidade: </strong> é feito um cálculo matemático, onde é considerado o tipo de seletor e a
+            origem do estilo. </li>
+        <ul>
+            <li>0. Universal selector, combinators e negation pseudo-class (:not())</li>
+            <li>1. Element type selector e pseudo-elements (::before, ::after) </li>
+            <li>10. Class e attribute selectors ([type="radio"])</li>
+            <li>100. ID selector</li>
+            <li>1000. Inline</li>
+        </ul>
+        <li><strong>!important: </strong> se colocar essa expressão na estilização, ela irá sobrescrever qualquer outra
+            já usada, mesmo a mais forte </li>
+    </ol>
+
+    <nav style="color: rgb(0, 98, 128)">Este é uma NAV de exemplo estilizada <strong>INLINE</strong></nav>
+
+    <br><span class="texto-roxo" id="teste">Este é um parágrafo de exemplo de estilizações por <strong>classe</strong> e
+        <strong>ID</strong></span><br><br>
+
+    <div>Exemplo de parágrafo com tags <strong>aninhadas</strong> </div><br>
+
+    <nav style="color: blueviolet" class="importante" id="importante">Este é uma NAV de exemplo estilizada com
+        <strong>!important</strong>
+    </nav>
+</body>
+
+</html>
