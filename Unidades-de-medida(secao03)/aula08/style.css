@@ -1,0 +1,17 @@
+.box {
+    height: 400px;
+    width: 400px;
+    background-color: indianred;
+
+}
+
+/* .box::after e .box::before são chamado de pseudo-elementos */
+.box::after {
+    content: "Aqui vem uma mensagem de after";
+    color: white;
+}
+
+.box::before {
+    content: "Aqui vem uma mensagem de before" ;
+    color: white;
+}
