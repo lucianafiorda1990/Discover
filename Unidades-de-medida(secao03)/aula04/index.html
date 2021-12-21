@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Aula 04</h1>
+    <h2>Distâncias</h2>
+    <h3>Absoluta: <span style="font-weight: normal">são fixas, não alteram o valor.</span></h3>
+    <table>
+
+        <colgroup>
+            <col style="background-color: gray">
+            <col style="background-color: rgba(128, 128, 128, 0.747)">
+            <col style="background-color: gray">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Unidade</th>
+                <th>Nome</th>
+                <th>Equivalência</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cm</td>
+                <td>Centímetros</td>
+                <td>1cm = 96px/2,54</td>
+            </tr>
+            <tr>
+                <td>in</td>
+                <td>Inches (Polegadas)</td>
+                <td>1in = 2,54 = 96px</td>
+            </tr>
+            <tr>
+                <td>px</td>
+                <td>Pixels</td>
+                <td>1px = 1/96th of 1in</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>O mais comum é usar o <span style="color: red"><b>px</b></span>, não recomendado o uso do cm.</p><br><br>
+    <h3>Relativa: <span style="font-weight: normal;">são relativas a algum outro valor.</span></h3>
+    <p>Benefício: maior adaptação aos diferentes tipos de telas.</p>
+
+    <table>
+        <colgroup>
+            <col style="background-color: gray">
+            <col style="background-color: rgba(128, 128, 128, 0.747)">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Unidade</th>
+                <th>Relativo à</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>em</td>
+                <td>Tamanho da fonte do pai</td>
+            </tr>
+            <tr>
+                <td>rem</td>
+                <td>Tamanho do elemento raiz (root/HTML)</td>
+            </tr>
+            <tr>
+                <td>vw</td>
+                <td>1% da viewport width</td>
+            </tr>
+            <tr>
+                <td>vh</td>
+                <td>1% da viewport height</td>
+            </tr>
+        </tbody>
+    </table><br><br>
+
+    <div>
+        <p class="paragrafo">Parágrafo de exemplo.</p>
+    </div>
+
+    <p><strong>Viewport = </strong>é toda a tela disponível. E quando falamos
+        em 1vw ou 1vh é como se tivéssemos quebrado a tela em 100 pedaços
+        e o elemento em questão fosse ocupar um destes espaços.</p>
+
+</body>
+
+</html>

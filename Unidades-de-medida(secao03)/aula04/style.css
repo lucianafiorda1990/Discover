@@ -1,0 +1,28 @@
+div{
+    font-size: 18px;
+}
+
+
+/* assim o paragrafo fica com 18px*/
+.paragrafo {
+    font-size: 1em;
+}
+
+/* assim o paragrafo fica com 36px */
+.paragrafo {
+    font-size: 2em;
+}
+
+/* assim o paragrafo fica com 48px (16px padrão do root/HTML x 3 = 48) */
+.paragrafo {
+    font-size: 3rem;
+}
+
+/* podemos alterar o root / HTML 
+:root {
+    font-size: 10px;
+} */
+
+html {
+    font-size: 12px;
+}
