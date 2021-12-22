@@ -1,0 +1,38 @@
+h3 {
+  color: red;
+  font-weight: bold;
+}
+
+/* comportamento padrão do block*/
+.div1 {
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* comportamento padrão do inline*/
+.span1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* comportamento alterado para inline*/
+.div2 {
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+  display: inline;
+}
+
+/* comportamento alterado para block*/
+.span2 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  display: block;
+}
