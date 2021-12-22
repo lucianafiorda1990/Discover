@@ -1,0 +1,78 @@
+.solid {
+  width: 100px;
+  height: 50px;
+  border: 2px solid red;
+}
+
+.dotted {
+  width: 100px;
+  height: 50px;
+  border: 2px dotted red;
+}
+
+.dashed {
+  width: 100px;
+  height: 50px;
+  border: 2px dashed red;
+}
+
+.double{
+  width: 100px;
+  height: 50px;
+  border: 10px double red;
+}
+
+.groove {
+  width: 100px;
+  height: 50px;
+  border: 10px groove red;
+}
+
+.ridge {
+  width: 100px;
+  height: 50px;
+  border: 10px ridge red;
+}
+
+.inset{
+  width: 100px;
+  height: 50px;
+  border: 10px inset red;
+}
+
+.outset{
+  width: 100px;
+  height: 50px;
+  border: 10px outset red;
+}
+
+.solid2 {
+  width: 100px;
+  height: 50px;
+  border: 10px solid red;
+  
+}
+
+.outline{
+  width: 100px;
+  height: 50px;
+  outline: 10px solid red;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
