@@ -1,0 +1,22 @@
+div {
+    color: blue;
+}
+
+/* herda a cor do pai */
+p {
+    color: inherit;
+}
+/* volta pra cor inicial */
+p {
+    color: initial;
+}
+
+/* pega a cor atual do elemento - se tiver cor no pai irá pegar de lá*/
+p{
+    color: currentColor;
+}
+
+/* não foi definida uma cor, então é herdado do pai */
+p {
+    color: unset;
+}
