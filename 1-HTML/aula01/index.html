@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aula 01</title>
 </head>
+
 <body>
 
-<!-- apertar ! para criar o escopo do HTML automaticamente -->
+  <!-- apertar ! para criar o escopo do HTML automaticamente -->
 
   <!-- Atributos globais -->
 
   <div class="container" contenteditable="true" tabindex="2">
     Conteúdo 1
-  </div> 
-  
+  </div>
+
   <div data-js="div" style="color: red" tabindex="1" title="Titulo da tag">
     Conteúdo 2
   </div>
-  
+
   <div hidden tabindex="3">
     Conteúdo 3
   </div>
-  
+
   <!-- Aninhamento de tags - CORRETO -->
   <p>
     Vou <em> escrever</em> um parágrafo
   </p>
-  
+
   <!-- Aninhamento de tags - ERRADO -->
-  
+
   <p>
     Vou <em> escrever um parágrafo
   </p> mesmo se eu tivesse texto aqui </em>
-  
-  
-  
+
+
+
   <div>
     <p>
       ... and your eyes must do some <strong>raining</strong> ...
     </p>
-  
+
     <p>
-     <em>... if you ever gonna grown...</em>
-     
+      <em>... if you ever gonna grown...</em>
+
     </p>
-  
+
     <a href="https://www.letras.mus.br/bright-eyes/181192/traducao.html">Saiba mais</a>
   </div>
 </body>
+
 </html>
