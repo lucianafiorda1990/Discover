@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Aula 06</h1>
+    <h2>Background-origin</h2>
+    <p>Por padrão, a imagem de background fica para dentro do espaço ocupado pela borda.</p>
+
+    <p>Porém podemos alterar desta maneira:</p>
+    <ul>
+        <li><strong>border-box: </strong> faz a imagem de fundo ocupar toda caixa pegando de borda a borda.</li>
+        <li><strong>content-box: </strong>comportamento padrão, onde a imagem ocupa o espaço do conteúdo apenas, ficando
+            as bordas livres. Se tiver o padding, a imagem não ocupará este espaço.</li>
+        <li><strong>padding-box: </strong> ele desconsidera o tamanho do padding e ocupa também este espaço.</li>
+    </ul>
+
+    <p>Exemplo com background-origin: border-box</p>
+    <div class="div1"></div><br>
+    <p>Exemplo com background-origin: content-box</p>
+    <div class="div2"></div><br>
+    <p>Exemplo com background-origin: padding-box</p>
+    <div class="div3"></div>
+
+    <h2>Background-clip</h2>
+    <p>Especifica se o fundo de um elemento, seja cor ou imagem, se extende
+        debaixo de sua área de borda, preenchimento ou conteúdo.</p>
+    <ul>
+        <li><strong>border-box: </strong> comportamento padrão, onde borda fica por cima da imagem</li>
+        <li><strong>content-box: </strong> a imagem ocupa apenas o espaço do conteúdo</li>
+        <li><strong>padding-box: </strong> a imagem não ocupa o mesmo espaço da borda e do padding</li>
+    </ul>
+
+    <p>Exemplo com background-clip: border-box</p>
+    <div class="div4"></div><br>
+    <p>Exemplo com background-clip: content-box</p>
+    <div class="div5"></div><br>
+    <p>Exemplo com background-clip: padding-box</p>
+    <div class="div6"></div>
+
+</body>
+
+</html>
