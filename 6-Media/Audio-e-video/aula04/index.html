@@ -11,13 +11,41 @@
 <body>
     <h1>Aula 04</h1>
     <h2>Iframe</h2>
-    <p>Podemos usar vídeos de terceiros (Youtube, por exemplo)</p>
+    <p>Podemos usar vídeos de terceiros através da tag &lt;iframe&gt; (Youtube, por exemplo)</p>
+
+    <h3>Anatomia</h3>
+    <ul>
+        <li><strong>width</strong></li>
+        <li><strong>height</strong></li>
+        <li><strong>src</strong></li>
+        <li><strong>frameborder</strong></li>
+        <li><strong>title</strong></li>
+        <li><strong>allowfullscreen</strong></li>
+        <li><strong>allow</strong>
+            <ul>
+                <li>accelerometer</li>
+                <li>encrypted-media</li>
+                <li>autoplay</li>
+                <li>gyroscope - permite que o video vire quando o usuário vira a tela</li>
+                <li>picture-in-picture</li>
+            </ul>
+        </li>
+    </ul>
+
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/aR-KAldshAE" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
     </iframe>
 
+
+    <h2>Maps</h2>
+    <p>Podemos incluir mapas em nossa página.</p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14758.635950858368!2d-46.95136995000001!3d-22.36650155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1640630576657!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0"
+        frameborder="0">
+    </iframe>
 </body>
 
 </html>
