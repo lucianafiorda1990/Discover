@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+
+<body>
+    <h1>Aula 03</h1>
+    <h2>Áudio</h2>
+    <p>Podemos adicionar áudios a nossa página.</p>
+
+    <h3>Anatomia da tag &lt;audio&gt;:</h3>
+    <ul>
+        <li><strong>src: </strong>origem do áudio</li>
+        <li><strong>controls: </strong>adiciona no áudio os controladores como play/ pause etc.</li>
+        <li><strong>OU</strong></li>
+        <li><strong>source:</strong>
+            <ul>
+                <li>src</li>
+                <li>type - ex type="audio/mp3"</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Algumas propriedades:</h3>
+    <ul>
+        <li><strong>autoplay: </strong>dá play automaticamente</li>
+        <li><strong>preload: </strong>
+            <ul>
+                <li>auto - carrega automaticamente todo conteúdo do áudio</li>
+                <li>metadata - carrega apenas o essencial do áudio</li>
+                <li>none - não carrega nada, apenas começa a carregar quando se aperta o play</li>
+            </ul>
+        </li>
+        <li><strong>loop: </strong>faz o áudio começar novamente quando termina (não funcionou no meu)</li>
+        <li><strong>muted: </strong>configura o áudio para iniciar mutado</li>
+    </ul>
+
+    <p>Exemplo de áudio com tag audio e scr junto:</p>
+    <audio src="audio.mp3" controls autoplay type="audio/mp3"></audio><br><br>
+    <p>Exemplo de áudio com tag audio e source:</p>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+</body>
+
+</html>
