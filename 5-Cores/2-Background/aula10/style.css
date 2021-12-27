@@ -1,0 +1,26 @@
+p {
+    font-size: 16px;
+}
+
+.div1 {
+    color: black;
+    padding: 8px;
+    width: 500px;
+    height: 500px;
+
+
+    background-color: blueviolet;
+    background-image: url(download.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-attachment: fixed;
+
+    background: linear-gradient(45deg, blue, lightgreen), 
+    url(download.jfif)
+    no-repeat right top / 200px border-box content-box fixed;
+    
+}
+
