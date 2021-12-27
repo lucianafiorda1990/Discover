@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <style>
+        video {
+            height: 300px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 02</h1>
+    <h2>Media - Vídeos</h2>
+    <p>Podemos adicionar vídeos em nossa página através da tag &lt;video&gt;.</p>
+    <h3>Anatomia da tag &lt;video&gt;:</h3>
+    <ul>
+        <li><strong>src: </strong>origem do vídeo</li>
+        <li><strong>controls: </strong>adiciona no vídeo os controladores como play/ pause etc.</li>
+        <li><strong>OU</strong></li>
+        <li><strong>source:</strong>
+            <ul>
+                <li>src</li>
+                <li>type - ex type="video/mp4"</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Algumas propriedades:</h3>
+    <ul>
+        <li><strong>autoplay: </strong>dá play automaticamente</li>
+        <li><strong>preload: </strong>
+            <ul>
+                <li>auto - carrega automaticamente todo conteúdo do vídeo</li>
+                <li>metadata - carrega apenas o essencial do vídeo</li>
+                <li>none - não carrega nada, apenas começa a carregar quando se aperta o play</li>
+            </ul>
+        </li>
+        <li><strong>loop: </strong>faz o vídeo começar novamente quando termina</li>
+        <li><strong>muted: </strong>configura o vídeo para iniciar mutado</li>
+        <li><strong>poster: </strong>imagem que aparece de fundo antes de começar o vídeo</li>
+
+    </ul>
+
+
+    <h3>Exemplo com preload = auto</h3>
+    <video src="video.mpg" controls preload="auto" loop muted poster="download.jfif"></video>
+
+    <h3>Exemplo com preload = metadata</h3>
+    <video src="video.mpg" controls preload="metadata"></video>
+
+    <h3>Exemplo com preload = none</h3>
+    <video src="video.mpg" controls preload="none"></video>
+
+    <p>Ou podemos fazer desta forma. Não funcionou.</p>
+
+    <h3>Episódio 2:</h3>
+    <video controls>
+        <source src="video.mpg" type="video/mpg">
+        <p>Este browser não suporta video, baixe-o aqui.</p>
+    </video>
+
+
+</body>
+
+</html>
