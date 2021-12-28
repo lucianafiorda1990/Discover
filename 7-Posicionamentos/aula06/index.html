@@ -13,7 +13,7 @@
     <h1>Aula 06</h1>
     <h2>Layout - Posicionamento</h2>
     <h3>Position - Absolute</h3>
-    <p>Quando configuramos um elemento com posição relativa, temos mais 5 valores que podemos configurar:</p>
+    <p>Quando configuramos um elemento com posição absoluta, temos mais 5 valores que podemos configurar:</p>
     <ul>
         <li>top</li>
         <li>right</li>
@@ -22,12 +22,34 @@
         <li>z-index</li>
     </ul>
 
-    <p>Exemplos:</p>
+    <p>Exemplos com box vermelho configurado para Absolute:</p>
     <div class="box1 box"></div>
     <div class="box2 box"></div>
     <div class="box3 box"></div>
 
-    <p>O posicionamento padrão é o <strong>static</strong>. Onde os elementos ficam estáticos em suas posições.</p>
+    <p>É possível notar que o espaço antes ocupado pelo box vermelho agora não é mais reservado, sendo assim o box verde
+        e azul subiram. É como se o box vermelho estivesse uma camada acima de tudo. Podendo inclusive ficar acima dos
+        textos.</p>
+
+    <h3>Absoluto referente ao pai</h3>
+    <p>O comportamento do position dependerá da configuração feita no elemento pai.</p>
+    <ul>
+        <li><strong>Situação 1: </strong>se o pai não tiver um position definido assumirá então o valor de static e
+            neste caso o filho será absoluto a todo documento.</li>
+        <li><strong>Situação 2: </strong>porém se o pai tiver como position o valor relative, então o filho será
+            absoluto apenas perante ao pai.</li>
+    </ul>
+
+    <h4>Exemplo da situação 1:</h4>
+    <div class="div1">
+        <div class="div2"></div>
+    </div>
+
+    <h4>Exemplo da situação 2:</h4>
+    <div class="div3">
+        <div class="div4"></div>
+    </div>
+
 </body>
 
 </html>
