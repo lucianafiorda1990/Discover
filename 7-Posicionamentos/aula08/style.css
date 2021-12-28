@@ -1,0 +1,62 @@
+strong {
+    color: red
+}
+
+.container {
+    position: relative;
+    top: 100px
+}
+
+.container2 {
+    position: relative;
+    top: 200px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+.box1{
+    background-color: red;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+}
+
+.box2{
+    background-color: yellow;
+    top: 20px;
+    left: 20px;
+}
+
+.box3{
+    background-color: blue;
+    top: 30px;
+    left: 30px;
+}
+
+
+
+.box4{
+    background-color: purple;
+    top: 10px;
+    left: 10px;
+    
+}
+
+.box5{
+    background-color: rgb(240, 74, 102);
+    top: 20px;
+    left: 20px;
+    z-index: 4;
+}
+
+.box6{
+    background-color: rgb(224, 146, 30);
+    top: 30px;
+    left: 30px;
+}
+
