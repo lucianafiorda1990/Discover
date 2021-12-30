@@ -1,0 +1,19 @@
+.line-height{
+    line-height: 5;
+}
+
+nav {
+    text-transform: capitalize;
+}
+
+span {
+    text-transform: lowercase;
+}
+
+div{
+    text-transform: none;
+}
+
+aside {
+    text-transform: uppercase;
+}
