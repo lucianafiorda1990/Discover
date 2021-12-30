@@ -1,0 +1,29 @@
+.line1 {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.line2 {
+    text-decoration-line: overline;
+    text-decoration-style: wavy;
+}
+
+.line3 {
+    text-decoration-line: line-through;
+    text-decoration-style: double;
+}
+
+.line4 {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.line5 {
+    text-decoration-line: overline;
+    text-decoration-color: blueviolet;
+}
+
+.line6 {
+    text-decoration: line-through wavy red;
+    
+}
