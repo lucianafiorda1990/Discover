@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Twinkle+Star&display=swap" rel="stylesheet">
+    <style>
+        span {
+            font-family: 'Licorice', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 07</h1>
+    <h2>Web-fonts</h2>
+    <p>Podemos usar fontes do sistema (local) ou da web</p>
+    <p>Como usar fontes da web?</p>
+    <ul>
+        <li>@font-face</li>
+        <li>@import</li>
+        <li>link</li>
+    </ul>
+
+    <p>Exemplo de @font-face:</p>
+    <pre>
+        <code>
+            /* vietnamese */
+            @font-face {
+            font-family: 'Licorice';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/licorice/v1/t5tjIR8TMomTCAyjNn2_jKPQzA.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+            }
+        </code>
+    </pre>
+
+    <p>Exemplo de @import (deve ser colado no head dentro da tag &lt;style&gt;):</p>
+    <pre>
+        <code>
+            style
+                @import url('https://fonts.googleapis.com/css2?family=Licorice&family=Twinkle+Star&display=swap');
+            /style
+        </code>
+    </pre>
+
+    <p>Exemplo de link (deve ser colado no head):</p>
+    <pre>
+        <code>
+            link rel="preconnect" href="https://fonts.googleapis.com"
+            link rel="preconnect" href="https://fonts.gstatic.com" crossorigin
+            link href="https://fonts.googleapis.com/css2?family=Licorice&family=Twinkle+Star&display=swap" rel="stylesheet"
+        </code>
+    </pre>
+
+    <span>Exemplo com fonte importada</span>
+</body>
+
+</html>
