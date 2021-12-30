@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 01</h1>
+    <h2>Formulários</h2>
+    <p>Servem para capturar dados do usuário. São feitos através da tag &lt;form&gt;.</p>
+    <p>Seus atributos básicos são:</p>
+    <ul>
+        <li><strong>action: </strong>informa para onde os dados devem ser enviados. Se caso não tiver este atributo ou
+            ele ficar em branco, irá enviar para a mesma página de origem.</li>
+        <li><strong>method: </strong>maneira com que os dados serão enviados. Temos a opção de enviar via método
+            <span>GET</span> ou <span>POST</span>.</li>
+    </ul>
+
+    <p>Exemplo de um método GET:</p>
+    <pre>
+        <code>
+            http://minhapagina.com/?name=Luciana&email=luzinha_fiorda@hotmail.com
+        </code>
+    </pre>
+
+    <p><strong>OBS: </strong>Se não informarmos o método, irá ser aplicado o método padrão <span>GET</span>.</p>
+    <p><strong>OBS: </strong>O método <span>POST</span> não deixa os dados expostos como o método <span>GET</span>, por
+        isso é bem mais usado principamente na criação da cadastros.</p>
+    <p><strong>OBS: </strong>Nunca fazer um form dentro de outro form.</p>
+
+
+</body>
+
+</html>
