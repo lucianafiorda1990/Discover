@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+</head>
+
+<body>
+    <h1>Aula 02</h1>
+    <h2>Fieldset</h2>
+    <p>Serve para agrupar campos de mesmo propósito. Isso deixa o código mais semantico e com maior acessibilidade.</p>
+
+    <h3>Atributos especiais:</h3>
+    <ul>
+        <li><strong>disabled: </strong>desabilita todos os elementos internos, ou seja, não serão enviados ao submeter o
+            formulário.</li>
+        <li><strong>form: </strong>o ID de um formulário ao qual esse fieldset pertence. Não precisa ficar dentro do
+            form</li>
+        <li><strong>name: </strong>nome do grupo (não aparece em tela)</li>
+    </ul>
+    <p><strong>-> legend: </strong> nome do agrupamento que irá aparecer em tela e deve ser o primeiro elemento dentro
+        do fieldset.</p>
+
+    <h3>Exemplo de form habilitado</h3>
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="">Nome</label>
+            <input type="text">
+        </fieldset>
+    </form>
+
+
+    <h3>Exemplo de form desabilitado</h3>
+    <form action="">
+        <fieldset disabled>
+            <legend>Contato</legend>
+            <label for="">Nome</label>
+            <input type="text">
+        </fieldset>
+    </form>
+
+    <h3>Exemplo de form com fieldset separado</h3>
+    <form id="contato" action="">
+        <button>Enviar</button>
+    </form>
+
+    <fieldset form="contato" name="input-contact">
+        <legend>Contato</legend>
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+</body>
+
+</html>
