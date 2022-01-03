@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05</title>
+    <style>
+        strong {
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 05</h1>
+    <h2>Datalist</h2>
+    <ul>
+        <li>Lista de valores como sugestão a uma tag &lt;input&gt;</li>
+        <li>Valores sugestivos e não obrigatórios</li>
+        <li>Usuário poderá selecionar um dos valores, ou colocar um valor diferente da seleção</li>
+        <li>O link é feito através do atributo "link"</li>
+    </ul>
+
+    <p><strong>OBS: </strong>se caso o campo for datalist porém não receber um dado no formato correto, ele irá ignorar
+        a lista. Por exemplo: um input do tipo "color" precisa dos itens da lista no formato código rgb.</p><br>
+
+    <h3>Tipos de input que <strong>suportam</strong> datalist e list:</h3>
+    <li>text, search, url, tel, email, date, month, week, time, datetime-local, number, range e color.</li>
+
+    <h3>Tipos de input que <strong>não suportam</strong> datalist e list:</h3>
+    <li>hidden, password, checkbox, radio file ou qualquer tipo de button.</li><br>
+
+    <h3>Exemplo de datalist</h3>
+    <datalist id="fruitsdata">
+        <option>Morango</option>
+        <option>Banana</option>
+        <option>Uva</option>
+        <option>Maçã</option>
+        <option>Pera</option>
+    </datalist>
+
+    <form action="">
+        <input list="fruitsdata" type="text" placeholder="Escolha uma fruta">
+    </form>
+
+
+    <h3>Exemplo de datalist para cores</h3>
+    <datalist id="colors">
+        <option>#ff0000</option>
+        <option>#0000ff</option>
+        <option>#00ff00</option>
+    </datalist>
+
+    <form action="">
+        <input list="colors" type="color">
+    </form>
+</body>
+
+</html>
