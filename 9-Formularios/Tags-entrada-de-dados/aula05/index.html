@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05</title>
+</head>
+
+<body>
+    <h1>Aula 05</h1>
+    <h2>URL</h2>
+    <p>Espera que o usuário digite uma URL e vai validar se está no formato correto. </p>
+
+    <h3>Atributos</h3>
+    <ul>
+        <li><strong>placeholder</strong></li>
+        <li><strong>readonly</strong></li>
+        <li><strong>disabled</strong></li>
+        <li><strong>value</strong></li>
+        <li><strong>required</strong></li>
+        <li><strong>min/maxlength</strong></li>
+        <li><strong>pattern</strong></li>
+        <li><strong>size</strong></li>
+        <li><strong>list: </strong>para linkar com a &lt;datalist&gt;</li>
+        <li><strong>title</strong></li>
+        <li><strong>spellcheck: </strong>habilita a verificação ortográfica do campo. Recebe valores como true/ false.
+        </li>
+    </ul>
+
+    <h3>Exemplo de URL</h3>
+    <form action="">
+        <datalist id="urlsdata">
+            <option>https://google.com.br</option>
+            <option>https://meusite.com.br</option>
+        </datalist>
+        <input type="url" placeholder="Digite uma URL" required pattern=".+\.com(\..+)?" list="urlsdata"
+            title="Digite uma URL no formato http(s)://nomedosite.com(.br)" spellcheck="true" required>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
