@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+
+<body>
+    <h1>Aula 04</h1>
+    <h2>Email</h2>
+    <p>Campo que espera que o usuário entre com um email e irá fazer as validações necessárias para checar a informação
+        que foi digitada pelo usuário.</p>
+
+    <h3>Atributos</h3>
+    <ul>
+        <li><strong>placeholder</strong></li>
+        <li><strong>readonly</strong></li>
+        <li><strong>disabled</strong></li>
+        <li><strong>required</strong></li>
+        <li><strong>multiple: </strong>permite que sejam digitados vários emails separados por vírgula</li>
+        <li><strong>min/maxlength</strong></li>
+        <li><strong>patter</strong></li>
+        <li><strong>list: </strong>para linkar com a &lt;datalist&gt;</li>
+    </ul>
+
+    <h3>Exemplo de input de email</h3>
+    <form action="">
+        <datalist id="emailslist">
+            <option>@hotmail.com</option>
+            <option>@gmail.com</option>
+            <option>@terra.com.br</option>
+        </datalist>
+        <input type="email" placeholder="Digite aqui seu email" required multiple minlength="7" size="20"
+            pattern=".+@.+\.com(\..+)?" list="emailslist" title="Insira um email no formato nome@dominio.com(.br)">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
