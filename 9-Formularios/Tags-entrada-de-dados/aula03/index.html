@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+    <style>
+        span {
+            color: rgb(224, 109, 109);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 03</h1>
+    <h2>Password</h2>
+    <p>Campo destinado a colocação de senhas. É seguro, pois esconde o que foi digitado. O estilo padrão do campo
+        depende do user agent (navegador).</p>
+
+    <h3>Atributos:</h3>
+    <ul>
+        <li><strong>minlenght: </strong>determina uma quantidade mínima de caracteres no campo</li>
+        <li><strong>maxlenght: </strong>determina uma quantidade máxima de caracteres no campo</li>
+        <li><strong>size: </strong>determina o tamanho do campo (caixa branca de fundo)</li>
+        <li><strong>pattern: </strong>expressão regular que para validar o que está sendo digitado no campo.
+            <span>Exemplo: se quisermos uma senha hexadecimal entre 4 e 8 dígitos: pattern="[0-9a-fA-F]{4,8}"</span>
+        </li>
+        <li><strong>title: </strong>coloca um título no campo que irá aparecer em tela</li>
+        <li><strong>placeholder: </strong>texto de exemplo</li>
+        <li><strong>readonly: </strong>nao permite alterações no campo</li>
+        <li><strong>required: </strong>torna o campo de preenchimento obrigatório</li>
+        <li><strong>inputmode: </strong>configura como irá abrir o teclado no celular para inserir a senha.
+            <span>Exemplo: inputmode="numeric" (só irá abrir o tecldo numérico do celular)</span>
+        </li>
+        <li><strong>autocomplete: </strong> permite o autocomplete/ sugestão de senhas
+            <ul>
+                <li><strong>on: </strong>permite a sugestão de new-password ou current-password</li>
+                <li><strong>off: </strong>desabilita a opção de autocompletar</li>
+                <li><strong>new-password: </strong>o navegador poderá sugerir uma nova senha</li>
+            </ul>
+        </li>
+
+
+    </ul>
+
+    <h3>Exemplo de campo de senha:</h3>
+    <form action="">
+        <input type="password" minlength="4" maxlength="6" size="20" pattern="[0-9a-fA-F]{4,6}"
+            title="Coloque uma senha Hexadecimal de no mínimo 4 caracteres e no máximo 8 caracteres."
+            placeholder="Exemplo: A4e1F01cD" required inputmode="numeric" autocomplete="new-password">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
