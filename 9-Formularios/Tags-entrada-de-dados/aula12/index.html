@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12</title>
+</head>
+
+<body>
+    <h1>Aula 12</h1>
+    <h2>Select - option</h2>
+    <p>Controle que oferece um menu de opções.</p>
+    <p> -> &lt;option&gt; contém as opções a serem selecionadas</p>
+    <h3>Atributos necessários</h3>
+    <ul>
+        <li>value</li>
+        <li>name</li>
+    </ul>
+    <h3>Atributos únicos</h3>
+    <ul>
+        <li><strong>Multiple: </strong>habilita multiplas opçoões</li>
+        <li><strong>Size: </strong>Quantas opções são visiveis?</li>
+    </ul>
+
+    <h3>Exemplo de input select</h3>
+    <label for="carselect">Qual o modelo do carro? </label><br>
+    <select name="car_model" id="carselect">
+        <option value="">Selecione o modelo</option>
+        <option value="Fiat">Fiat</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Renault">Renault</option>
+    </select>
+
+    <h3>Exemplo de input select, multiple e size</h3>
+    <label for="carselect">Qual o modelo do carro? </label><br>
+    <select name="car_model" id="carselect" multiple size="2">
+        <option value="">Selecione o modelo</option>
+        <option value="Fiat">Fiat</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Renault">Renault</option>
+    </select>
+</body>
+
+</html>
