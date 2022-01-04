@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11</title>
+</head>
+
+<body>
+    <h1>Aula 11</h1>
+    <h2>Textarea</h2>
+    <p>Usado para textos grandes.</p>
+    <h3>Atributos</h3>
+    <ul>
+        <li><strong>id: </strong>para linkar com o label</li>
+        <li><strong>name: </strong>para quando for enviar os dados</li>
+        <li><strong>rows e cols: </strong>quantidade de linhas e colunas que vão definir o tamanho da box de texto</li>
+        <li><strong>maxlength e minlength: </strong>máximo e mínimo de caracteres</li>
+        <li><strong>wrap: </strong>é referente a quebra de linha. Recebe os valores hardsoft/on e off. Por padrão é on,
+            e faz a quebra automática de linhas. Se colocarmos off, fica tudo numa linha só e com barra de rolagem
+            horizontal.</li>
+        <li><strong>Outros atributos comuns de input: </strong>autocomplete, autofocus, disabled, placeholder, readonly,
+            form, required...</li>
+    </ul>
+
+    <h3>Exemplo de input com textarea com wrap="off"</h3>
+    <form action="">
+        <label for="message">Mensagem</label><br>
+        <textarea name="message" id="message" cols="30" rows="3" minlength="10" maxlength="100"
+            wrap="off"></textarea><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+</body>
+
+</html>
