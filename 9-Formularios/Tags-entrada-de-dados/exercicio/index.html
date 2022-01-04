@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        input {
+            margin-bottom: 16px;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula de exercício</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+
+            <label for="nome" pattern="[a-zA-Z]">Nome</label><br>
+            <input type="text" id="nome" name="nome"><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" pattern=".+@.+\.com(\..*)?"><br>
+
+            <label for="msg">Mensagem</label><br>
+            <textarea name="" id="msg" name="msg" cols=18" rows="5"></textarea><br>
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
