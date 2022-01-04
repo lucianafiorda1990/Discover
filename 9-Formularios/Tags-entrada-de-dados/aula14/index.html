@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14</title>
+</head>
+
+<body>
+    <h1>Aula 14</h1>
+    <h2>Search</h2>
+    <p>Campo destinado a buscas.</p>
+
+    <h3>Atributos</h3>
+    <ul>
+        <li><strong>list/ datalist</strong></li>
+        <li><strong>aria-label: </strong>semelhante ao label, porém não aparece em tela, serve apenas para questões de
+            acessibilidade</li>
+        <li><strong>pattern</strong></li>
+    </ul>
+
+    <h3>Exemplo de input com search</h3>
+    <datalist id="searchterms">
+        <option>Mac</option>
+        <option>Win</option>
+        <option>Linux</option>
+    </datalist>
+    <form action="">
+        <input type="search" name="q" list="searchterms" placeholder="Digite seu termo de busca" size="30">
+        <button>Pesquisar</button>
+    </form>
+
+    <h3>Exemplo de input com search com pattern</h3>
+    <form action="">
+        <label for="">Pesquisar pelo ID</label>
+        <input type="search" name="q" size="5" pattern="[0-9]{2}" title="Número do ID com 2 dígitos">
+        <button>Pesquisar</button>
+    </form>
+</body>
+
+</html>
