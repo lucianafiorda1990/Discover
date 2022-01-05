@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+
+<body>
+    <h1>Aula 03</h1>
+    <h2>Scope - VAR</h2>
+
+    <p>Se declararmos uma variável com "var" ela será de escopo global, ou seja, podem ser acessadas mesmo de fora do
+        escopo local onde foram criadas.</p>
+
+    <script>
+
+        console.log("antes - x = ", x) //antes - x =  undefined (undefined pois veio antes da atribuição de valor)
+        {
+            var x = 10
+        }
+        console.log("depois - x = ", x) //depois - x =  10
+
+    </script>
+
+    <h1>Aula 04</h1>
+    <h2>Scope - CONST e LET</h2>
+    <p>Variáveis declaradas com "let" e "const" são de escopo local e só funcionando onde foram criadas.</p>
+
+    <script>
+        // console.log("antes - x = ", x) - erro
+        // console.log("antes - y = ", y) - erro
+
+        {
+            let x = 10
+            const y = 20
+            console.log("antes - x = ", x)
+            console.log("antes - y = ", y)
+        }
+    </script>
+</body>
+
+</html>
