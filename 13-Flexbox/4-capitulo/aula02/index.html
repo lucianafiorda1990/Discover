@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <style>
+        .container {
+            display: flex;
+            border: 1px solid red;
+            height: 100px;
+        }
+
+        .rowreverse {
+            flex-direction: row-reverse;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .columnreverse {
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 02</h1>
+    <h2>Flex-direction</h2>
+    <p>Valores: row, row-reverse, column e column-reverse. O valor padrão é row.</p>
+
+    <h3>Flex-direction: row</h3>
+    <div class="container row">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+    </div>
+    <h3>Flex-direction: row-reverse</h3>
+    <div class="container rowreverse">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+    </div>
+    <h3>Flex-direction: column</h3>
+    <div class="container column">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+    </div>
+    <h3>Flex-direction: column-reverse</h3>
+    <div class="container columnreverse">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+    </div>
+
+</body>
+
+</html>
