@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            border: 1px solid red;
+            height: 100px;
+        }
+
+        .container2 {
+            display: flex;
+            border: 1px solid red;
+            height: 200px;
+            flex-direction: column;
+        }
+
+        .item {
+            font-size: 30px;
+        }
+
+        .around {
+            justify-content: space-around;
+        }
+
+        .between {
+            justify-content: space-between;
+        }
+
+        .evenly {
+            justify-content: space-evenly;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+        .start {
+            justify-content: flex-start;
+        }
+
+        .end {
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 05</h1>
+    <h2>Justify-content</h2>
+    <p>Alinha os elementos no eixo principal dentro do container. Distrui os elementos.</p>
+
+    <p><strong>Valores: </strong></p>
+    <ul>
+        <li>flex-start (padrão)</li>
+        <li>flex-end</li>
+        <li>center</li>
+        <li>space-around</li>
+        <li>spce-between</li>
+        <li>space-evenly</li>
+    </ul>
+
+    <h2>Considerando os elementos em row:</h2>
+    <h3>Exemplo com justify-content: flex-start</h3>
+    <div class="container start">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h3>Exemplo com justify-content: flex-end</h3>
+    <div class="container end">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h3>Exemplo com justify-content: center</h3>
+    <div class="container center">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h3>Exemplo com justify-content: space-around</h3>
+    <div class="container around">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h3>Exemplo com justify-content: space-between</h3>
+    <div class="container between">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h3>Exemplo com justify-content: space-evenly</h3>
+    <div class="container evenly">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div><br><br>
+
+    <hr>
+
+    <h2>Considerando os elementos em column:</h2>
+    <h3>Exemplo com justify-content: flex-start</h3>
+    <div class="container2 start">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h3>Exemplo com justify-content: flex-end</h3>
+    <div class="container2 end">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h3>Exemplo com justify-content: center</h3>
+    <div class="container2 center">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h3>Exemplo com justify-content: space-around</h3>
+    <div class="container2 around">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h3>Exemplo com justify-content: space-between</h3>
+    <div class="container2 between">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h3>Exemplo com justify-content: space-evenly</h3>
+    <div class="container2 evenly">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+</body>
+
+</html>
