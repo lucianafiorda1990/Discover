@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+    <style>
+        .container {
+            display: flex;
+            border: 1px solid red;
+            height: 100px;
+        }
+
+        .flexflow {
+            flex-flow: column wrap;
+        }
+
+        .item {
+            width: 300px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 04</h1>
+    <h2>Flex-flow</h2>
+    <p>Maneira shorthand de já definir valores para o flex-direction e flex-wrap ao mesmo tempo.</p>
+    <p>Se tiver apenas um valor sendo do direction ou do wrap ele também irá aceitar e manter o valor padrão para o que
+        não foi informado.</p>
+
+    <h3>Exemplo sem flex-flow</h3>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+
+    <h3>Exemplo com flex-flow</h3>
+    <div class="container flexflow">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+</body>
+
+</html>
