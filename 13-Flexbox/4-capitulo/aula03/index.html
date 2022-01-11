@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+    <style>
+        .container {
+            display: flex;
+            border: 1px solid red;
+            height: 100px;
+        }
+
+        .item {
+            width: 300px;
+            border: 1px solid;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .wrapreverse {
+            flex-wrap: wrap-reverse
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 03</h1>
+    <h2>Flex-wrap</h2>
+    <p>Conceito de multiplas linhas para comportar itens maiores que o espaço disponível.</p>
+    <p><strong>Valores: </strong> nowrap (padrão), wrap e wrap-reverse.</p><br>
+
+    <h3>Exemplo de flex-wrap: nowrap</h3>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+
+    <h3>Exemplo de flex-wrap: wrap</h3>
+    <div class="container wrap">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+
+    <h3>Exemplo de flex-wrap: wrap-reverse</h3>
+    <div class="container wrapreverse">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+
+    <p><strong>OBS: </strong> só irá criar novas linhas se for preciso. Experimente mudar o width dos ".item para
+        800px;" e veja a diferença.</p>
+</body>
+
+</html>
