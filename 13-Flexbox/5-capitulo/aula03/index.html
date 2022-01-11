@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+    <style>
+        .container {
+            border: 1px solid red;
+            display: flex;
+            height: 100px;
+            font-size: 30px;
+        }
+
+        .item {
+            border: 1px solid;
+        }
+
+        .container div:nth-child(1) {
+            flex-grow: 2;
+        }
+
+        .container div:nth-child(2),
+        .container div:nth-child(3) {
+            flex-grow: 1;
+        }
+
+        .container2 {
+            border: 1px solid red;
+            display: flex;
+            height: 500px;
+            font-size: 30px;
+            flex-direction: column;
+        }
+
+        .item2 {
+            border: 1px solid;
+        }
+
+        .container2 div:nth-child(1) {
+            flex-grow: 2;
+        }
+
+        .container2 div:nth-child(2),
+        .container2 div:nth-child(3) {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 03</h1>
+    <h2>Flex-grow</h2>
+    <p>Crescimento do item para ocupar um espaço vazio.</p>
+
+    <h2>Considerando os elementos em row:</h2>
+    <h3>Exemplo com flex-grow:</h3>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+
+    <h2>Considerando os elementos em column:</h2>
+    <h3>Exemplo com flex-grow:</h3>
+    <div class="container2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+    </div>
+</body>
+
+</html>
