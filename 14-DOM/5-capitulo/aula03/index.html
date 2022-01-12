@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+
+<body>
+    <h1>Aula 03</h1>
+    <h2>Buscando irmãos</h2>
+
+    <header>
+        <h2>Meu titulo</h2>
+    </header>
+
+
+    <script>
+        let element = document.querySelector('h2')
+
+        //mostra o próximo irmão do elemento - considera as quebras de linhas
+        console.log('nextSibling: ', element.nextSibling)
+
+        //mostra o próximo irmão do elemento - não considera as quebras de linhas
+        console.log('nextElementSibling: ', element.nextElementSibling)
+
+        //mostra o irmão anterior - considera as quebras de linha
+        console.log('previousSibling: ', element.previousSibling)
+
+        //mostra o ultimo filho - não considera a quebra de linha
+        console.log('previousElementSibling: ', element.previousElementSibling)
+    </script>
+
+</body>
+
+</html>
