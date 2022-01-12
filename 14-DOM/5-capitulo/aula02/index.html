@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+</head>
+
+<body>
+    <h1>Aula 02</h1>
+    <h2>Buscando filhos</h2>
+
+    <header>
+        <h2>Meu titulo</h2>
+    </header>
+
+
+    <script>
+        let element = document.querySelector('body')
+        //mostra todos os filhos do elemento inclusive as quebras de linhas como 'text' -  retorno como NodeList
+        console.log('childNodes: ', element.childNodes)
+
+        //msotra todos os filhos porém não considera as quebras de linha e vem em formato HTML Collection
+        console.log('children: ', element.children)
+
+        //mostra o primeiro filho - considera as quebras de linha
+        console.log('firstChild: ', element.firstChild)
+
+        //mostra o primeiro filho - não considera a quebra de linha
+        console.log('firstElementChild: ', element.firstElementChild)
+
+        //mostra o ultimo filho - considera as quebras de linha
+        console.log('lastChild: ', element.lastChild)
+
+        //mostra o ultimo filho - não considera a quebra de linha
+        console.log('lastElementChild: ', element.lastElementChild)
+    </script>
+
+</body>
+
+</html>
