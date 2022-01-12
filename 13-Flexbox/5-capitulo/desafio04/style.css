@@ -1,0 +1,25 @@
+.container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+
+button {
+    background-color: blue;
+    color: #FFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    justify-content: center;
+    border: blue;
+    line-height: 0;
+}
+
+img {
+    width: 2rem;
+    height: 2rem;
+}
+
