@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+</head>
+
+<body>
+    <h1>Aula 09</h1>
+    <h2>Value</h2>
+
+    <h3>Meu blog</h3>
+    <input type="text">
+    <input class='input2' type="text" value="Valor do input 2">
+
+    <script>
+
+        //atribuindo valor (setter)
+        let element = document.querySelector('input')
+        element.value = "Novo valor"
+
+        //pegando valor (getter)
+        let element2 = document.querySelector('.input2')
+        console.log(element2.value)
+
+        //atribuindo o valor para uma nova variavel
+        let inputValue = element2.value
+        console.log(inputValue)
+
+    </script>
+</body>
+
+</html>
