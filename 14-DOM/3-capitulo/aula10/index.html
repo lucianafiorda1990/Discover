@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+</head>
+
+<body>
+    <h1>Aula 10</h1>
+    <h2>Manipulando atributos</h2>
+
+    <header class='cabecalho'>
+        <p>Texto</p>
+    </header>
+
+    <script>
+
+        ///atribuindo um novo atributo (setter)
+        let header = document.querySelector('header')
+        header.setAttribute('id', 'header')
+        const headerID = document.querySelector('#header')
+        console.log(headerID)
+
+        //pegando o valor do atributo (getter)
+        console.log(headerID.getAttribute('id'))
+
+        header.removeAttribute('class')
+
+        //se caso dermos um setAttribute('class', 'nome-da-classe') -> ele irá substituir a classe ja existente se tiver pelo que foi passado agora. Se quiser manter a classe antiga tem que incluir ela no setAttribute('class', 'class-antiga class-nova')
+
+
+    </script>
+</body>
+
+</html>
