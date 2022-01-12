@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+
+    <style>
+        .active {
+            color: hsl(0, 67%, 52%);
+        }
+
+        .green {
+            background-color: rgb(144, 226, 144);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 02</h1>
+    <h2>Classlist</h2>
+
+    <header>
+        <h3>Meu blog</h3>
+    </header>
+
+    <script>
+
+        const element = document.querySelector('body')
+
+        //adicionando uma classe ou mais
+        element.classList.add('active', 'green')
+
+        //removendo uma classe ou mais
+        element.classList.remove('active', 'green')
+
+        //toggle funciona como um interruptor (on/ off), ou seja se tem a classe ele tira, e se não tem ele coloca.
+        element.classList.toggle('active', 'green')
+
+        console.log(element.classList)
+    </script>
+</body>
+
+</html>
