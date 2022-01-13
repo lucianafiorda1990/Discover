@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+button {
+    background-color: rgb(91, 134, 199);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+    border-radius: 4px;
+    font-size: 20px;
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+    right: 300px;
+}
+
+.p-8 {
+    background-color: rgb(223, 126, 126);
+    position: absolute;
+    top: 200px;
+    right: 300px;
+    border: 1px solid gray;
+    width: 200px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px
+
+}
+
+.invisible {
+    visibility: hidden;
+    background-color: lightgray;
+}
