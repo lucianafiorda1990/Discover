@@ -1,5 +1,3 @@
-global.console.log('Hello')
-
 //globals
 
 //Diretorio atual, onde está o arquivo em que estamos executando
