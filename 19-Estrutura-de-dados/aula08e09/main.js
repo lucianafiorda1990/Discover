@@ -51,7 +51,7 @@ console.log(stack.push('structures'))
 console.log(stack.peek())
 
 
-//removendo
+// //removendo
 stack.pop()
 console.log(stack.pop())
 
