@@ -2,7 +2,7 @@
 
 /*
 Queue = fila
--> linear
+-> linear, um atras do outro
 -> o primeiro a entrar na fila, é o primeiro a sair
 -> FIFO - "First In, First Out"
 -> Enqueue = entrando na fila
@@ -40,6 +40,7 @@ fila.enqueue('Mariana')
 fila.enqueue('Jorge')
 fila.enqueue('Paola')
 
+//removendo dados
 fila.dequeue()
 fila.dequeue()
 fila.dequeue()
