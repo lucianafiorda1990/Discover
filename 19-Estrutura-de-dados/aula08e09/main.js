@@ -2,7 +2,7 @@
 
 /*
 Stack = pilha
--> linear, um após o outro
+-> linear, um em cima o outro
 -> o último a entrar é o primeiro a sair
 -> LIFO - "Last In, First Out" 
 */
