@@ -22,6 +22,7 @@ class Atleta {
         } else {
             this.categoria = 'adulto'
         }
+        return this.categoria
     }
 }
 
