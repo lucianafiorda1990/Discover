@@ -41,7 +41,7 @@ class Philips extends Parafuso {
 
 class Allen extends Parafuso { }
 
-//riar e usar
+//criar e usar
 // new Parafuso() // throw new Error('Classe abstrata não pode ser instânciada')     
 let fenda = new Fenda()
 let philips = new Philips()
