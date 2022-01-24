@@ -11,7 +11,7 @@
 class Parafuso {
     constructor() {
         if (this.constructor === Parafuso)
-            throw new Error('Classe abstrata não pode ser instânciada')
+            throw new Error('Classe abstrata não pode ser instanciada')
     }
 
     get tipo() {
