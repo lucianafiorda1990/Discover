@@ -9,8 +9,8 @@
 -> Não faremos uso de loops (for/while), mas se houver necessidade de tal, usaremos recursividade
 */
 
-const random = (number, Math) => Math.floor(Math.random() * number)
-//como usar esse random?
+const random = (number) => Math.floor(Math.random() * number)
+console.log(random(3))
 
 //recursive
 //finding the fatorial of a number
