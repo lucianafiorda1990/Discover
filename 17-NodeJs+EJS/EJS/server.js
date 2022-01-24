@@ -44,4 +44,4 @@ app.get("/sobre", function (req, res) {
 })
 
 app.listen(8080);
-console.log('Servidor funcionando')
+console.log('Servidor rodando em http://localhost:8080')
